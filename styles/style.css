@@ -5,15 +5,31 @@ body{
     font-family: 'Poppins', sans-serif;  
 }
 /* players profile styles */
+.players-profile{
+    display: flex;
+    justify-content: center;
+}
+.players{
+    width: 1050px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    /* background-color: #e6fff7; */
+}
 .player{
     width: 330px;
+    background-color:  #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    margin-top: 27px;
 }
 .player-image{
-    padding: 15px;
-}
-.player-image img{
     width: 300px;
     height: 256px;
+    padding: 15px 15px 0px 15px;
+}
+.player-image img{
+    width: 100%;
+    height: 100%;
 }
 .player-info{
     padding: 0 15px;
