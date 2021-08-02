@@ -92,10 +92,6 @@ body{
 .menubar-banner:hover #hover-banner{
     display: block;
 }
-.menubar:hover #hover-banner{
-    display: none;
-    
-}
 /* players profile styles */
 .players-profile{
     display: flex;
@@ -106,7 +102,6 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 30px;
-    /* background-color: #e6fff7; */
 }
 .player{
     width: 330px;
@@ -238,5 +233,85 @@ section.copa-winner {
      media query styles
 ----------------------------- */
 @media only screen and (max-width:688px) {
-    
+    .menubar{
+        display: none;
+    }
+    .watch-link{
+        display: block;
+        width: 120px;
+    }
+    .top-banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+    }
+    .top-banner-title {
+        margin-left: 0;
+        margin-bottom: 50px;
+    }
+    .top-banner-title h2{
+        width: 278px;
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .top-banner-image{
+        width: 329px;
+        margin: 0;
+    }
+    .watch-link{
+        width: 120px;
+    }
+    .players, .copa-winner-detail, .highlight{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+    }
+    .winner-info{
+        width: 50%;
+    }
+    .winner-info p{
+        width: 100%;
+    }
+    .winner-image img{
+        width: 87%;
+        height: 100%;
+    }
+    .copa-winner h1{
+        font-size: 2em;
+    }
+    .videos{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .video{
+        width: 280px;
+    }
+    #iframe-video{
+        width: 280px;
+        align-items: center;
+    }
+    .highlight-detail{
+        width: 329px;
+        height: 309px;
+        margin-right: 0;
+    }
+    .highlight-detail h2{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .highlight-detail p{
+        margin-bottom: 0;
+    }
+    .highlight-image {
+        width: 328px;
+    }
+    .highlight-image img{
+        width: 100%;
+    }
+    .footer-logo {
+        width: 276px;
+    }
 }
